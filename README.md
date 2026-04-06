@@ -51,8 +51,9 @@ cd cli-calculator
 ### 2. Run the Application
 
 ```bash id="q2k7s6"
-python calculator.py
+python CLI-based calculator.py
 ```
+<img width="519" height="208" alt="image" src="https://github.com/user-attachments/assets/93773023-0ba0-452b-a024-e37d97ff6bb7" />
 
 ---
 
@@ -125,9 +126,9 @@ This project is licensed under the **MIT License**.
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Hunde Tolera**
 
-* GitHub: https://github.com/your-username
+* GitHub: https://github.com/1First04
 
 ---
 
