@@ -11,17 +11,17 @@ DST.head()
 DST.info()
 
 DST.describe()
-
+#@@@@@@@@@@@@@@@@@@@@@@
 # Step 2DAta Cleaning
-
-# Keep original copy (best practice)
+#@@@@@@@@@@@@@@@@@@@@@
+# Keep original copy 
 
 df_clean = DST.copy()
 print("Shape before cleaning:", df_clean.shape)
 print(df_clean.isnull().sum())
-
+#@@@@@@@@@@@@@@@@@@@@@@@@
 # Handle Missing Values
-
+#@@@@@@@@@@@@@@@@@@@@@@@@
 # --- Age → median
 age_median = df_clean["Age"].median()
 df_clean["Age"] = df_clean["Age"].fillna(age_median)
@@ -36,8 +36,9 @@ if "Cabin" in df_clean.columns:
 
 # Remove Duplicates
 df_clean = df_clean.drop_duplicates(keep="first")
-
+#@@@@@@@@@@@@@@@@@@@@@@@@
 #  Validation Checks
+#@@@@@@@@@@@@@@@@@@@@@@@@
 print("\nAfter Cleaning:")
 print("Shape after cleaning:", df_clean.shape)
 print(df_clean.isnull().sum())
